@@ -1,0 +1,119 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+  
+  .header-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    max-width: 500px;
+    margin-right: 30px;
+  }
+  .header-picture {
+    width: 30vw;
+    height: 30vw;
+    max-width: 300px;
+    max-height: 300px;
+  }
+  
+  .header-title {
+    font-size: 6rem;
+    line-height: 5rem;
+    letter-spacing: -0.2rem;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+.subtitle {
+    font-size: 4rem;
+    line-height: 3rem;
+    letter-spacing: -0.2rem;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  
+  .section {
+    position: relative;
+    margin-top: 180px;
+    text-align: center;
+  }
+  
+  .section::before,
+  .section::after {
+    position: absolute;
+    display: inline-flex;
+    content: "";
+    background-size: 700px 700px;
+    height: 700px;
+    width: 700px;
+    z-index: -1;
+  }
+  
+  .section::before {
+    top: 40%;
+    left: -40%;
+  }
+  
+  .section::after {
+    top: 0;
+    right: -40%;
+  }
+  
+  .tablets {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+    flex-wrap: wrap;
+  }
+
+.hero {
+  width: 120vw;
+  height: 500px;
+  transform: translateX(calc((-120vw + 1080px) / 2));
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.description {
+  max-width: 600px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    transform: translateX(-5%);
+  }
+}
+.tablet-name {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #37ba83;
+  margin: 0;
+}
+
+.tablet-roles {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.full-name {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.tablet-description {
+  margin-bottom: 2rem;
+}
+
+.tablet-info {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #37ba83;
+}
