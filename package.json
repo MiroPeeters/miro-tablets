@@ -21,7 +21,8 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "webpack-merge": "^5.8.0"
   },
   "keywords": [
     "gatsby"
